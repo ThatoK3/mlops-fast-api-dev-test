@@ -1,0 +1,21 @@
+# Model file path
+SAVED_MODEL="../models/Logistic_Regression.pkl"
+
+# API Settings
+API_PORT=8000
+API_HOST="0.0.0.0"
+API_DEBUG="True"
+
+# Prediction Threshold
+PREDICTION_THRESHOLD=0.3
+
+# Security (for development only - change in production)
+SECRET_KEY="dev-only-secret-key-123"
+
+
+# MySQL Configuration
+DB_HOST="ip"
+DB_PORT="3306"
+DB_NAME="stroke_predictions"
+DB_USER="root"
+DB_PASSWORD="rootpass"

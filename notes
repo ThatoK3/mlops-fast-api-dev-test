@@ -1,0 +1,2 @@
+chmod 644 fast_api/.env
+create stroke_predictions db

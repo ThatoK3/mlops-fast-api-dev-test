@@ -1,0 +1,14 @@
+{
+  "timestamp": "2025-07-22T09:04:35.164558",
+  "status": "success",
+  "performance": {
+    "accuracy": 0.6666666666666666,
+    "recall": 1.0,
+    "precision": 0.5,
+    "f1": 0.6666666666666666,
+    "roc_auc": 0.75,
+    "sample_size": 3
+  },
+  "data_drift": {},
+  "alerts": []
+}

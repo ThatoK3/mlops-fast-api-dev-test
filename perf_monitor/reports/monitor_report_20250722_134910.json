@@ -1,0 +1,14 @@
+{
+  "timestamp": "2025-07-22T13:49:10.395160",
+  "status": "success",
+  "whylabs_logged": false,
+  "performance": {
+    "accuracy": 0.6666666666666666,
+    "recall": 1.0,
+    "precision": 0.5,
+    "f1": 0.6666666666666666,
+    "roc_auc": 0.75,
+    "sample_size": 3
+  },
+  "alerts": []
+}

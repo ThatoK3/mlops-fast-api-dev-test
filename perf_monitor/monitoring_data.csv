@@ -1,0 +1,4 @@
+age,avg_glucose_level,bmi,hypertension,heart_disease,predicted_y,true_y
+67,210.5,32.1,1,0,1,0
+45,95.2,24.3,0,0,0,0
+72,185.0,29.7,1,1,1,1

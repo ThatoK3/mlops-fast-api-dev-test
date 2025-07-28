@@ -1,0 +1,11 @@
+curl -X POST "http://localhost:8000/predict" \
+-H "Content-Type: application/json" \
+-d '{
+    "gender": "Female",
+    "age": 58,
+    "hypertension": 0,
+    "heart_disease": 1,
+    "avg_glucose_level": 156,
+    "bmi": 28,
+    "smoking_status": "never smoked"
+}'

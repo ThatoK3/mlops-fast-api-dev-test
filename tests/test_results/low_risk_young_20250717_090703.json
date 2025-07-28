@@ -1,0 +1,23 @@
+{
+  "test_name": "low_risk_young",
+  "timestamp": "20250717_090703",
+  "arguments": {
+    "gender": "Female",
+    "age": 35,
+    "hypertension": 0,
+    "heart_disease": 0,
+    "avg_glucose_level": 90,
+    "bmi": 22,
+    "smoking_status": "never smoked"
+  },
+  "response": {
+    "probability": 0.15127616405879127,
+    "risk_category": "Low",
+    "contributing_factors": [
+      "num__age",
+      "cat__age_group_Young adult",
+      "num__avg_glucose_level"
+    ]
+  },
+  "test_passed": true
+}

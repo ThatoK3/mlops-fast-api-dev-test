@@ -1,0 +1,23 @@
+{
+  "test_name": "high_risk_elderly",
+  "timestamp": "20250717_090703",
+  "arguments": {
+    "gender": "Male",
+    "age": 72,
+    "hypertension": 1,
+    "heart_disease": 1,
+    "avg_glucose_level": 210,
+    "bmi": 34,
+    "smoking_status": "smokes"
+  },
+  "response": {
+    "probability": 0.8542034453085414,
+    "risk_category": "High",
+    "contributing_factors": [
+      "num__age",
+      "cat__age_group_Young adult",
+      "num__avg_glucose_level"
+    ]
+  },
+  "test_passed": true
+}
