@@ -21,11 +21,11 @@ def generate_glucose(age, hypertension, heart_disease):
     return max(70, min(300, base + noise + (0.1 * age)))
 
 def generate_bmi(age, smoking):
-    base = random.uniform(18, 35)  # normal range
+    base = random.uniform(18, 35)
     if smoking == "smokes":
-        base -= random.uniform(0, 2)  # smokers sometimes lower BMI
+        base -= random.uniform(0, 2)
     if age > 50:
-        base += random.uniform(0, 3)  # age effect
+        base += random.uniform(0, 3)
     return round(base + np.random.normal(0, 2), 1)
 
 # Generate dataset
@@ -36,10 +36,16 @@ for _ in range(N):
     hypertension = random.choice([0, 1])
     heart_disease = random.choice([0, 1])
     smoking = random.choice(smoking_status)
-    
+
     glucose = round(generate_glucose(age, hypertension, heart_disease), 1)
     bmi = generate_bmi(age, smoking)
-    
+
+    # Gender-matched name
+    if gender == "Male":
+        name = fake.name_male()
+    else:
+        name = fake.name_female()
+
     row = {
         "gender": gender,
         "age": age,
@@ -48,7 +54,7 @@ for _ in range(N):
         "avg_glucose_level": glucose,
         "bmi": bmi,
         "smoking_status": smoking,
-        "name": fake.name(),
+        "name": name,
         "country": "South Africa",
         "province": random.choice(provinces)
     }
